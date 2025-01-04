@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News Aggregator</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            h1 {
+                color: #333;
+            }
+            form {
+                margin-bottom: 20px;
+            }
+            input[type="text"] {
+                padding: 5px;
+                width: 300px;
+            }
+            button {
+                padding: 5px 10px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            h3 {
+                color: #007bff;
+            }
+            a {
+                color: #28a745;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    
+<body>
+    <h1>News Aggregator</h1>
+    
+    <form action="" method="get">
+        <input type="text" name="q" placeholder="Search news..." value="{{ query }}">
+        <button type="submit">Search</button>
+    </form>
+    
+    {% if query %}
+        <h2>Search Results for "{{ query }}"</h2>
+    {% else %}
+        <h2>Latest News</h2>
+    {% endif %}
+    
+    {% for article in articles %}
+    <div>
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.description }}</p>
+        <p>Published: {{ article.formatted_publishedAt }}</p>
+        <a href="{{ article.url }}" target="_blank">Read more</a>
+    </div>
+    <hr>
+{% empty %}
+    <p>No articles found.</p>
+{% endfor %}
+
+</body>
+</html>
