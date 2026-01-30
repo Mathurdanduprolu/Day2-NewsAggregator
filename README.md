@@ -211,14 +211,4 @@ Typical production dependencies:
 pip install gunicorn whitenoise
 ```
 
----
 
-## License
-
-Add a license if you want others to reuse your code (MIT is a common default).
-
----
-
-## Maintainer
-
-Mathur Danduprolu
