@@ -4,9 +4,6 @@
 # Day2 — News Aggregator (Django)
 
 Developer-focused setup guide for the **Day2-NewsAggregator** repository.
-
-> Note: I wasn’t able to fetch your repo contents directly from GitHub in this environment (network access to GitHub is blocked), so this README is written to match a **typical Django + NewsAPI news aggregator** project. If you paste your folder tree / `requirements.txt` / `settings.py` snippets, I can tighten this to be 100% exact (commands, env vars, apps, routes).
-
 ---
 
 ## What this project does
