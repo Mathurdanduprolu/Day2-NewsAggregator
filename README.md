@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/370699f5-e7f3-49ea-9bb0-6b81f7a440f6)
+
+
 # Day2 — News Aggregator (Django)
 
 Developer-focused setup guide for the **Day2-NewsAggregator** repository.
